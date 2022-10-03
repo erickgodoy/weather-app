@@ -1,0 +1,15 @@
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    
+}

@@ -1,3 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #003c5a;
+}
+
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    padding: 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    color: #f3f3f3;
+    padding: 2rem 0;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+
 .weather.loading{
     visibility: hidden;
     max-height: 20px;

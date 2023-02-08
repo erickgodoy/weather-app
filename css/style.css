@@ -2,6 +2,16 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-height: 100vh;
     color: #f2fff6;
+    background-image: url("../img/background.png");
+}
+
+.container{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
 }
 
 .row{

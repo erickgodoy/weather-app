@@ -23,11 +23,19 @@ let weather = {
         document.querySelector(".side-left").style.background = "url('https://source.unsplash.com/900x1600/?"+name+"') no-repeat center fixed";
         document.querySelector(".side-left").style.backgroundSize = "cover";
     },
+    init: function(){
+        if(localStorage.getItem("city") === ""){
+            localStorage.setItem("city","Lima");
+        }
+        this.fetchWeather(localStorage.getItem("city"));
+    },
     search: function(){
-        this.fetchWeather(document.querySelector(".search-bar").value);
+        localStorage.setItem("city",document.querySelector(".search-bar").value);
+        this.fetchWeather(localStorage.getItem("city"));
     }
 };
 
+weather.init();
 document.querySelector(".search button").addEventListener("click", function(){
     weather.search();
 });
@@ -36,4 +44,5 @@ document.querySelector(".search-bar").addEventListener("keyup", function(event){
     if(event.key == "Enter"){
         weather.search();
     }
-})
+});
+

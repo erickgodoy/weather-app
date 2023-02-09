@@ -20,8 +20,8 @@ let weather = {
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + " %";
         document.querySelector(".wind").innerText = "Wind: " + speed + "km/h ";   
         document.querySelector(".weather").classList.remove("loading");
-        document.querySelector(".side-left").style.background = "url('https://source.unsplash.com/900x1600/?"+name+"') no-repeat center fixed";
-        document.querySelector(".side-left").style.backgroundSize = "cover";
+        document.querySelector(".side-left").style.background = "url('https://source.unsplash.com/1800x1600/?"+name+"') no-repeat";
+        document.querySelector(".side-left").style.backgroundSize = "100% 100%";
     },
     init: function(){
         if(localStorage.getItem("city") === ""){

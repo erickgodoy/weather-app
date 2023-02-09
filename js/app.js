@@ -24,7 +24,7 @@ let weather = {
         document.querySelector(".side-left").style.backgroundSize = "100% 100%";
     },
     init: function(){
-        if(localStorage.getItem("city") === ""){
+        if(localStorage.getItem("city") === null){
             localStorage.setItem("city","Lima");
         }
         this.fetchWeather(localStorage.getItem("city"));
